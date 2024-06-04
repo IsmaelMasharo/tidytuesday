@@ -1,1 +1,14 @@
 data/
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# python
+__pycache__/
+.ipynb_checkpoints/
