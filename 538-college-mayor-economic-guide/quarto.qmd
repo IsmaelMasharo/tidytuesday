@@ -1,0 +1,28 @@
+---
+title: "538 "
+format:
+  html:
+    code-fold: true
+jupyter: python3
+
+---
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+
+```
+
+```{python}
+path = "data/538-college-mayor-economic-guide.csv"
+df = pd.read_csv(path)
+```
+
+No formating, no detecting errors ??
+
+```{python}
+    df.pipe(fct_reorder, "Major_category", "Median")
+    .boxplot(column="Median", by="Major_category", vert=False)
+    .set(xlabel="Median Salary", title="Boxplot of Median Salary by Major Category")
+```
+
