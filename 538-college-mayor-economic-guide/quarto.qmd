@@ -14,8 +14,9 @@ import matplotlib.pyplot as plt
 ```
 
 ```{python}
-path = "data/538-college-mayor-economic-guide.csv"
+path = "../data/538-college-mayor-economic-guide.csv"
 df = pd.read_csv(path)
+ojs_define(data = df)
 ```
 
 No formating, no detecting errors ??
@@ -26,3 +27,6 @@ No formating, no detecting errors ??
     .set(xlabel="Median Salary", title="Boxplot of Median Salary by Major Category")
 ```
 
+```{ojs}
+x + 5
+```

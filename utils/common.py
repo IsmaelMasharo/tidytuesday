@@ -31,6 +31,8 @@ def fct_reorder(df, factor, agg_by, agg_funct="median"):
 
 
 def fct_lump_n(df, column_name, n):
+    # TODO: account for nan values in the column
+
     # Get the value counts of the categories
     category_counts = df[column_name].value_counts()
 
