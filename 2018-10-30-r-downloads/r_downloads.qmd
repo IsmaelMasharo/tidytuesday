@@ -1,0 +1,26 @@
+---
+title: "r-packages-downloaded"
+format: html
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+year_downloads <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-10-30/r_downloads_year.csv')
+```
+
+```{r}
+year_downloads <- year_downloads %>% 
+  select(-1)
+```
+
+```{r}
+year_downloads %>% 
+  count(version, sort=TRUE) %>% 
+  mutate()
+```
